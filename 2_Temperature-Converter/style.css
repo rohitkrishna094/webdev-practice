@@ -1,0 +1,17 @@
+body {
+    background-color: #222222;
+    color: white;
+}
+
+.padding-right {
+    width: 150px;
+}
+
+.left-side {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.tempColor {
+    color: #3DB5D3;
+}

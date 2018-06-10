@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Website</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-md-12 mt-5">
+                <div class="text-center">
+                    <h1 style="display: inline;" class="mr-3">Temperature Converter</h1>
+                    <span id="temp"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-sm-4 offset-sm-2">
+                <div class="input-group input-group-lg">
+                    <input type="number" id="fIn1" class="form-control" placeholder="Enter number">
+                    <div class="input-group-append">
+                        <span class="input-group-text">&deg;F</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="input-group input-group-lg">
+                    <div class="input-group-append ">
+                        <div class="input-group-text padding-right" style="border-top-left-radius: 5px; border-bottom-left-radius: 5px;">
+                            <span id="cOut1"></span>
+                            &nbsp;&deg;C
+                        </div>
+                    </div>
+                    <div class="input-group-append ">
+                        <div class="input-group-text padding-right">
+                            <span id="kOut1"></span>
+                            &nbsp;&deg;K
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-sm-4 offset-sm-2">
+                <div class="input-group input-group-lg">
+                    <input type="number" id="cIn2" class="form-control" placeholder="Enter number">
+                    <div class="input-group-append">
+                        <span class="input-group-text">&deg;C</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="input-group input-group-lg">
+                    <div class="input-group-append ">
+                        <div class="input-group-text padding-right" style="border-top-left-radius: 5px; border-bottom-left-radius: 5px;">
+                            <span id="kOut2"></span>
+                            &nbsp;&deg;K
+                        </div>
+                    </div>
+                    <div class="input-group-append ">
+                        <div class="input-group-text padding-right">
+                            <span id="fOut2"></span>
+                            &nbsp;&deg;F
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-sm-4 offset-sm-2">
+                <div class="input-group input-group-lg">
+                    <input type="number" id="kIn3" class="form-control" placeholder="Enter number">
+                    <div class="input-group-append">
+                        <span class="input-group-text">&deg;K</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 ">
+                <div class="input-group input-group-lg ">
+                    <div class="input-group-append ">
+                        <div class="input-group-text padding-right " style="border-top-left-radius: 5px; border-bottom-left-radius:5px; ">
+                            <span id="fOut3"></span>
+                            &nbsp;&deg;F
+                        </div>
+                    </div>
+                    <div class="input-group-append ">
+                        <div class="input-group-text padding-right ">
+                            <span id="cOut3"></span>
+                            &nbsp;&deg;C</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN "
+        crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q "
+        crossorigin="anonymous "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl "
+        crossorigin="anonymous "></script>
+    <script src="script.js "></script>
+</body>
+
+</html>
