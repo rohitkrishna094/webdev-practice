@@ -24,3 +24,7 @@ header {
         min-height: 500px;
     }
 }
+
+.input-field.center .btn {
+    width: 100%;
+}
