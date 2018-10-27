@@ -1,1 +1,4 @@
-$(document).ready(function() {});
+$(document).ready(function() {
+  console.log($('.sidenav'));
+  $('.sidenav').sidenav();
+});
