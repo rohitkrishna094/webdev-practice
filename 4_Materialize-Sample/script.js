@@ -7,4 +7,5 @@ $(document).ready(function() {
     // you can add options here; check doc
     disableWeekends: true
   });
+  $('.tooltipped').tooltip();
 });
