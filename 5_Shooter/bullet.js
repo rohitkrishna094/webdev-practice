@@ -8,7 +8,7 @@ class Bullet {
   }
 
   update() {
-    let angleRadians = (this.angle * Math.PI) / 180;
+    let angleRadians = (this.angle * Math.PI) / 45;
     let newX = this.speed * Math.cos(angleRadians);
     let newY = this.speed * Math.sin(angleRadians);
     this.y -= newY;
