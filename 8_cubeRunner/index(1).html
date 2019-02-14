@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Cube Game</title>
+			<link rel="stylesheet" href="style.css" type="text/css" />
+		</head>
+		
+		<body>
+			<h1>Blasttrash's Cube Runner</h1>
+			<p><a href="">Source Code</a></p>
+			<canvas id="canvas" width=1000" height="500">
+				Canvas not supported in your browser.
+			</canvas>
+			<script src="script.js"></script>
+			<div id="info">
+				<p>TLDR: Try collecting red cube to increase scores, white cube to increase speed, black cube to grow in size. Use arrow keys and wasd keys to control blue
+				and green cubes (player 1 and player 2). Your scores are shown above. Also avoid getting hit by small blue and small green cubes, or just make them hit the
+				boundaries or the red cube or your oppenent's cube to distract them.<br><br>
+				
+				<b><u>Further Instructions:</u></b><br>
+					
+				First of all thanks to Edward Herbert on youtube for making this amazing beginner series tutorial. This here is my implementation of the game. Secondly thanks to
+				Quin Proctor for giving the code for his implementation which helped me redo my implementation. This is how you play.<br /><br />
+				
+				There are two players: blue cube and green cube controlled by arrow keys and wasd keys respectively. Your scores are shown above. You need to collect the red cube
+				(scoring cube) to increase your score.<br><br>
+				
+				Apart from that you do have a small white cube and a black cube. Collecting these will increase your speed and size respectively. However there is a limit as to how much
+				you can speed up and how much you can grow, so after a certain number of collections that you make, collecting these further will not help you anymore.<br><br>
+				
+				To make the game even more interesting there is a small blue and a green cube. These guys will try to reset your speed(small blue cube will reset big blue cube or
+				player 1 and small green cube will reset big green cube or player 2) and size to default values if they hit you. Also, they are intelligent since ,
+				if your speed increases these guys will track you at a higher rate and after a certain point, their speed will be more than your speed,
+				so you may not be able to avoid them. However you can use the canvas boundaries(some bugs with the bottom boundary), your opponent's cube and the scoring cube
+				(red cube), to avoid these monstrosities (:P).  You basically let these guys hit the boundaries or your opponent's cube or the red cube which will respawn them at another
+				place, but their speed will still be intact. Also if you want to score more points, you need to be aware as to not touch your opponents resetter(if you are blue, then
+				this would be the small green cube and vice versa).<br><br>
+				
+				Also this runs at 60fps, hence the smooth play and also I designed it for a faster gameplay. Check the source code(link above) to check how this was done.
+				There is no end point though, you just keep going until you are satisfied. If you have any doubts, suggestions, please mail me at blasttrash@gmail.com
+				</p>
+			</div>
+		</body>
+	</html>
