@@ -1,0 +1,1 @@
+Followed tutorial from https://medium.com/@js_tut/html-clock-in-real-time-53ca21909ac2
