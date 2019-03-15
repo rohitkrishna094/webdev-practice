@@ -7,14 +7,14 @@ nav {
   text-align: center;
 }
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   margin-top: 20px;
 }
 
-nav > ul > li {
+nav>ul>li {
   display: inline;
   padding: 20px;
 }
@@ -24,7 +24,7 @@ nav > ul > li {
   margin: 0 auto;
   display: flex;
   flex-direction: row;
-  flex-direction: row-reverse;
+  /* flex-direction: row-reverse; */
   /* flex-direction: column; */
   /* flex-direction: column-reverse; */
 
@@ -37,6 +37,23 @@ nav > ul > li {
   margin: 10px;
   flex-basis: 20%;
   flex-grow: 1;
+  text-align: center;
+}
+
+.companyBanner {
+  widows: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.companyBanner>img {
+  /* display: inline-block;
+  margin: 20px; */
+  width: 150px;
+  align-self: center
 }
 
 .red {
@@ -100,13 +117,13 @@ nav > ul > li {
   font-size: 25px;
 } */
 
-#dots > ul {
+#dots>ul {
   list-style-type: square;
   display: flex;
   justify-content: center;
 }
 
-#dots > ul > li {
+#dots>ul>li {
   display: list-item;
   padding: 5px 10px;
   margin: 10px 3px;
