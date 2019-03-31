@@ -14,18 +14,69 @@ body {
     /* animation speeds */
     --hoverTextSpeed: 0.5s;
     --hoverScrollSpeed: 0.5s;
+    --logoSpeed: 0.5s;
 
     /* widths, height */
     --sidebarWidth: 250px;
+    --sidebarMinWidth: 60px;
 }
 
+.sidebar_container {
+    max-height: 100vh;
+    width: var(--sidebarWidth);
+}
+
+/* logo */
+.logo {
+    background-color: var(--sideBar_SelectColor);
+    display: flex;
+    flex-direction: row;
+    transition: background var(--logoSpeed);
+    /* height: 7vh; */
+}
+
+.logo i {
+    color: var(--sideBar_mainFontColor);
+    margin-top: 29px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    transition: color var(--logoSpeed);
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.logo .logoText {
+    font-size: 48px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: var(--primaryColor);
+    font-family: 'Iceland', cursive;
+    transition: color var(--logoSpeed);
+}
+
+.logo .logoText:hover,
+.logo i:hover,
+.logo img {
+    color: var(--highlightColor);
+    cursor: pointer;
+}
+
+.logo:hover {
+    background-color: var(--sideBar_SubMenuColor);
+}
 
 .sidebar {
     display: flex;
     background-color: var(--sideBar_BackgroundColor);
     color: var(--sideBar_mainFontColor);
-    width: var(--sidebarWidth);
-    height: 100vh;
+    height: calc(100vh - 68px);
 
     flex-direction: column;
     overflow: hidden;
@@ -56,36 +107,6 @@ body {
 /* Handle on hover */
 .sidebar::-webkit-scrollbar-thumb:hover {
     background: var(--sideBar_menuHeaderFontColor);
-}
-
-/* logo */
-.logo {
-    background-color: var(--sideBar_SelectColor);
-    width: var(--sidebarWidth);
-    display: flex;
-    flex-direction: row;
-}
-
-.logo img {
-    width: 50px;
-    height: 50px;
-    margin-left: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.logo .logoText {
-    font-size: 48px;
-    margin-left: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    color: var(--primaryColor);
-    font-family: 'Iceland', cursive;
-}
-
-.logo .logoText:hover {
-    color: var(--highlightColor);
-    cursor: pointer;
 }
 
 .sidebar_contents {
@@ -138,3 +159,29 @@ body {
 .sidebar .sidebar_contents .sidebar_section .sidebar_menu ul {
     display: none;
 }
+
+/* test for css sidebar hide */
+/* .sidebar_sectionTitle,
+.sidebar_menuHeader,
+.sidebar_menu i:nth-child(3),
+.logo img,
+.logo .logoText {
+    display: none;
+}
+
+.logo {
+    height: 68px;
+}
+
+.logo i {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transform: scaleX(-1);
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.sidebar_container {
+    width: var(--sidebarMinWidth);
+} */
