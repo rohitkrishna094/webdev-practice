@@ -156,9 +156,25 @@ body {
 }
 
 /* hide uls initially */
-.sidebar .sidebar_contents .sidebar_section .sidebar_menu ul {
+.sidebar_menu ul {
     display: none;
 }
+
+/* still working on ul open */
+/* .sidebar_menu ul {
+    display: block;
+    color: Red;
+    background-color: #fff;
+    margin-left: 40px;
+    padding: 0;
+    width: 100%;
+    font-size: 12px;
+}
+
+.sidebar_menu ul li {
+    list-style-type: inside;
+    background-color: yellow;
+} */
 
 /* test for css sidebar hide */
 /* .sidebar_sectionTitle,
