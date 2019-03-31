@@ -7,14 +7,14 @@ nav {
   text-align: center;
 }
 
-nav>ul {
+nav > ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   margin-top: 20px;
 }
 
-nav>ul>li {
+nav > ul > li {
   display: inline;
   padding: 20px;
 }
@@ -41,7 +41,7 @@ nav>ul>li {
 }
 
 .companyBanner {
-  widows: 75%;
+  width: 75%;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -49,11 +49,12 @@ nav>ul>li {
   justify-content: space-evenly;
 }
 
-.companyBanner>img {
+.companyBanner > img {
   /* display: inline-block;
   margin: 20px; */
   width: 150px;
-  align-self: center
+  align-self: center;
+  margin-top: 10px;
 }
 
 .red {
@@ -118,13 +119,13 @@ nav>ul>li {
   font-size: 25px;
 } */
 
-#dots>ul {
+#dots > ul {
   list-style-type: square;
   display: flex;
   justify-content: center;
 }
 
-#dots>ul>li {
+#dots > ul > li {
   display: list-item;
   padding: 5px 10px;
   margin: 10px 3px;

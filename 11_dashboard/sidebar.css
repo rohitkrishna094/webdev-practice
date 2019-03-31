@@ -1,0 +1,54 @@
+body {
+    --sideBar_SelectColor: #323445;
+    --sideBar_BackgroundColor: #282A3C;
+    --sideBar_SubMenuColor: #202231;
+
+    --sideBar_mainFontColor: #767888;
+    --sideBar_selectFontColor: white;
+    --sideBar_menuHeaderFontColor: #53556D;
+}
+
+
+.sidebar {
+    display: flex;
+    background-color: var(--sideBar_BackgroundColor);
+    color: var(--sideBar_mainFontColor);
+    width: 250px;
+    height: 100vh;
+
+    flex-direction: column;
+}
+
+.sidebar_contents {
+    margin-bottom: 20px;
+}
+
+.sidebar_menu {
+    margin-top: 10px;
+}
+
+.sidebar_section {
+    margin-left: 20px;
+}
+
+.sidebar_sectionTitle {
+    font-size: 12px;
+    color: var(--sideBar_menuHeaderFontColor);
+}
+
+.sidebar_menuHeader {
+    color: var(--sideBar_mainFontColor);
+    margin-left: 10px;
+}
+
+.fas.fa-angle-right {
+    float: right;
+    margin-right: 15px;
+    position: relative;
+    top: 5px;
+}
+
+/* hide uls initially */
+.sidebar .sidebar_contents .sidebar_section .sidebar_menu ul {
+    display: none;
+}
