@@ -76,7 +76,7 @@ body {
     display: flex;
     background-color: var(--sideBar_BackgroundColor);
     color: var(--sideBar_mainFontColor);
-    height: calc(100vh - 68px);
+    height: calc(100vh - 70px);
 
     flex-direction: column;
     overflow: hidden;
