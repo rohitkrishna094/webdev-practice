@@ -3,6 +3,7 @@
 Click the links below for their demonstration
 
 * [10_clock](https://rohitkrishna094.github.io/webdev-practice/10_clock/)
+* [11_dashboard](https://rohitkrishna094.github.io/webdev-practice/11_dashboard/)
 * [1_Weight-Converter](https://rohitkrishna094.github.io/webdev-practice/1_Weight-Converter/)
 * [2_Temperature-Converter](https://rohitkrishna094.github.io/webdev-practice/2_Temperature-Converter/)
 * [3_Shooter-Game](https://rohitkrishna094.github.io/webdev-practice/3_Shooter-Game/)
