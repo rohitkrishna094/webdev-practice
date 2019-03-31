@@ -8,9 +8,15 @@ body {
     --sideBar_selectFontColor: white;
     --sideBar_menuHeaderFontColor: #53556D;
 
+    --primaryColor: #3F51B5;
+    --highlightColor: #228DFF;
+
     /* animation speeds */
     --hoverTextSpeed: 0.5s;
     --hoverScrollSpeed: 0.5s;
+
+    /* widths, height */
+    --sidebarWidth: 250px;
 }
 
 
@@ -18,7 +24,7 @@ body {
     display: flex;
     background-color: var(--sideBar_BackgroundColor);
     color: var(--sideBar_mainFontColor);
-    width: 250px;
+    width: var(--sidebarWidth);
     height: 100vh;
 
     flex-direction: column;
@@ -52,10 +58,40 @@ body {
     background: var(--sideBar_menuHeaderFontColor);
 }
 
+/* logo */
+.logo {
+    background-color: var(--sideBar_SelectColor);
+    width: var(--sidebarWidth);
+    display: flex;
+    flex-direction: row;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.logo .logoText {
+    font-size: 48px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: var(--primaryColor);
+    font-family: 'Iceland', cursive;
+}
+
+.logo .logoText:hover {
+    color: var(--highlightColor);
+    cursor: pointer;
+}
+
 .sidebar_contents {
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 250px;
+    width: var(--sidebarWidth);
 }
 
 
