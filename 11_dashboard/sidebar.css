@@ -10,6 +10,7 @@ body {
 
     /* animation speeds */
     --hoverTextSpeed: 0.5s;
+    --hoverScrollSpeed: 0.5s;
 }
 
 
@@ -18,13 +19,43 @@ body {
     background-color: var(--sideBar_BackgroundColor);
     color: var(--sideBar_mainFontColor);
     width: 250px;
+    height: 100vh;
 
     flex-direction: column;
+    overflow: hidden;
+}
+
+.sidebar:hover {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/* width of scrollbar */
+.sidebar::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* track */
+.sidebar::-webkit-scrollbar-track {
+    background: var(--sideBar_BackgroundColor);
+}
+
+/* Handle */
+.sidebar::-webkit-scrollbar-thumb {
+    background: var(--sideBar_mainFontColor);
+    border-radius: 200px;
+    border: 3px var(--sideBar_BackgroundColor) solid;
+}
+
+/* Handle on hover */
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background: var(--sideBar_menuHeaderFontColor);
 }
 
 .sidebar_contents {
     margin-top: 10px;
     margin-bottom: 10px;
+    width: 250px;
 }
 
 
