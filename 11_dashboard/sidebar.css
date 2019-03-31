@@ -1,4 +1,5 @@
 body {
+    /* colors */
     --sideBar_SelectColor: #323445;
     --sideBar_BackgroundColor: #282A3C;
     --sideBar_SubMenuColor: #202231;
@@ -6,6 +7,9 @@ body {
     --sideBar_mainFontColor: #767888;
     --sideBar_selectFontColor: white;
     --sideBar_menuHeaderFontColor: #53556D;
+
+    /* animation speeds */
+    --hoverTextSpeed: 0.5s;
 }
 
 
@@ -14,21 +18,18 @@ body {
     background-color: var(--sideBar_BackgroundColor);
     color: var(--sideBar_mainFontColor);
     width: 250px;
-    height: 100vh;
 
     flex-direction: column;
 }
 
 .sidebar_contents {
-    margin-bottom: 20px;
-}
-
-.sidebar_menu {
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.sidebar_section {
-    margin-left: 20px;
+
+.sidebar_sectionTitle {
+    padding-left: 20px;
 }
 
 .sidebar_sectionTitle {
@@ -39,6 +40,24 @@ body {
 .sidebar_menuHeader {
     color: var(--sideBar_mainFontColor);
     margin-left: 10px;
+    transition: color var(--hoverTextSpeed);
+}
+
+.sidebar_menu {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    cursor: pointer;
+
+    transition: color var(--hoverTextSpeed);
+}
+
+.sidebar_menu:hover .sidebar_menuHeader {
+    color: white;
+}
+
+.sidebar_menu:hover {
+    color: white;
 }
 
 .fas.fa-angle-right {
