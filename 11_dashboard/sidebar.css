@@ -1,180 +1,180 @@
 body {
-    /* colors */
-    --sideBar_SelectColor: #323445;
-    --sideBar_BackgroundColor: #282A3C;
-    --sideBar_SubMenuColor: #202231;
+  /* colors */
+  --sideBar_SelectColor: #323445;
+  --sideBar_BackgroundColor: #282a3c;
+  --sideBar_SubMenuColor: #202231;
 
-    --sideBar_mainFontColor: #767888;
-    --sideBar_selectFontColor: white;
-    --sideBar_menuHeaderFontColor: #53556D;
+  --sideBar_mainFontColor: #767888;
+  --sideBar_selectFontColor: white;
+  --sideBar_menuHeaderFontColor: #53556d;
 
-    --primaryColor: #3F51B5;
-    --highlightColor: #228DFF;
+  --primaryColor: #3f51b5;
+  --highlightColor: #228dff;
 
-    /* animation speeds */
-    --hoverTextSpeed: 0.5s;
-    --hoverScrollSpeed: 0.5s;
-    --logoSpeed: 0.5s;
+  /* animation speeds */
+  --hoverTextSpeed: 0.5s;
+  --hoverScrollSpeed: 0.5s;
+  --logoSpeed: 0.5s;
 
-    /* widths, height */
-    --sidebarWidth: 250px;
-    --sidebarMinWidth: 60px;
+  /* widths, height */
+  --sidebarWidth: 250px;
+  --sidebarMinWidth: 60px;
 }
 
 .sidebar_container {
-    max-height: 100vh;
-    width: var(--sidebarWidth);
+  max-height: 100vh;
+  width: var(--sidebarWidth);
 }
 
 /* logo */
 .logo {
-    background-color: var(--sideBar_SelectColor);
-    display: flex;
-    flex-direction: row;
-    transition: background var(--logoSpeed);
-    /* height: 7vh; */
+  background-color: var(--sideBar_SelectColor);
+  display: flex;
+  flex-direction: row;
+  transition: background var(--logoSpeed);
+  /* height: 7vh; */
 }
 
 .logo i {
-    color: var(--sideBar_mainFontColor);
-    margin-top: 29px;
-    margin-left: 15px;
-    margin-bottom: 15px;
-    transition: color var(--logoSpeed);
+  color: var(--sideBar_mainFontColor);
+  margin-top: 29px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  transition: color var(--logoSpeed);
 }
 
 .logo img {
-    width: 50px;
-    height: 50px;
-    margin-left: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .logo .logoText {
-    font-size: 48px;
-    margin-left: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    color: var(--primaryColor);
-    font-family: 'Iceland', cursive;
-    transition: color var(--logoSpeed);
+  font-size: 48px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: var(--primaryColor);
+  font-family: 'Iceland', cursive;
+  transition: color var(--logoSpeed);
 }
 
 .logo .logoText:hover,
 .logo i:hover,
 .logo img {
-    color: var(--highlightColor);
-    cursor: pointer;
+  color: var(--highlightColor);
+  cursor: pointer;
 }
 
 .logo:hover {
-    background-color: var(--sideBar_SubMenuColor);
+  background-color: var(--sideBar_SubMenuColor);
 }
 
 .sidebar {
-    display: flex;
-    background-color: var(--sideBar_BackgroundColor);
-    color: var(--sideBar_mainFontColor);
-    height: calc(100vh - 70px);
+  display: flex;
+  background-color: var(--sideBar_BackgroundColor);
+  color: var(--sideBar_mainFontColor);
+  height: calc(100vh - 70px);
 
-    flex-direction: column;
-    overflow: hidden;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 .sidebar:hover {
-    overflow-y: scroll;
-    overflow-x: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 /* width of scrollbar */
 .sidebar::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
 
 /* track */
 .sidebar::-webkit-scrollbar-track {
-    background: var(--sideBar_BackgroundColor);
+  background: var(--sideBar_BackgroundColor);
 }
 
 /* Handle */
 .sidebar::-webkit-scrollbar-thumb {
-    background: var(--sideBar_mainFontColor);
-    border-radius: 200px;
-    border: 3px var(--sideBar_BackgroundColor) solid;
+  background: var(--sideBar_mainFontColor);
+  border-radius: 200px;
+  border: 3px var(--sideBar_BackgroundColor) solid;
 }
 
 /* Handle on hover */
 .sidebar::-webkit-scrollbar-thumb:hover {
-    background: var(--sideBar_menuHeaderFontColor);
+  background: var(--sideBar_menuHeaderFontColor);
 }
 
 .sidebar_contents {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: var(--sidebarWidth);
-}
-
-
-.sidebar_sectionTitle {
-    padding-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: var(--sidebarWidth);
 }
 
 .sidebar_sectionTitle {
-    font-size: 12px;
-    color: var(--sideBar_menuHeaderFontColor);
+  padding-left: 20px;
+}
+
+.sidebar_sectionTitle {
+  font-size: 12px;
+  color: var(--sideBar_menuHeaderFontColor);
 }
 
 .sidebar_menuHeader {
-    color: var(--sideBar_mainFontColor);
-    margin-left: 10px;
-    transition: color var(--hoverTextSpeed);
+  color: var(--sideBar_mainFontColor);
+  margin-left: 10px;
+  transition: color var(--hoverTextSpeed);
 }
 
 .sidebar_menu {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  cursor: pointer;
 
-    transition: color var(--hoverTextSpeed);
+  transition: color var(--hoverTextSpeed);
 }
 
 .sidebar_menu:hover .sidebar_menuHeader {
-    color: white;
+  color: white;
 }
 
 .sidebar_menu:hover {
-    color: white;
+  color: white;
+  background-color: var(--sideBar_SubMenuColor);
 }
 
 .fas.fa-angle-right {
-    float: right;
-    margin-right: 15px;
-    position: relative;
-    top: 5px;
+  float: right;
+  margin-right: 15px;
+  position: relative;
+  top: 5px;
 }
 
 /* hide uls initially */
-.sidebar_menu ul {
-    display: none;
-}
-
 /* still working on ul open */
-/* .sidebar_menu ul {
-    display: block;
-    color: Red;
-    background-color: #fff;
-    margin-left: 40px;
-    padding: 0;
-    width: 100%;
-    font-size: 12px;
+.sidebar_menu ul {
+  display: none;
+  color: var(--sideBar_mainFontColor);
+  margin-left: 40px;
+  padding: 0;
+  width: 100%;
+  font-size: 12px;
 }
 
 .sidebar_menu ul li {
-    list-style-type: inside;
-    background-color: yellow;
-} */
+  /* list-style-type: inside;
+  background-color: yellow; */
+}
+
+.sidebar_menu ul li:hover {
+  color: white;
+  transition: color var(--hoverTextSpeed);
+}
 
 /* test for css sidebar hide */
 /* .sidebar_sectionTitle,
