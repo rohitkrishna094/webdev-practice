@@ -19,7 +19,8 @@ window.addEventListener('load', () => {
     document.body.style.webkitTransition = 'background 0.3s';
     document.body.style.background = colors[(index + 1) % colors.length];
     bubble.style.animation = `jump 1s ease`;
-    bubble.addEventListener('animation', function() {
+    bubble.addEventListener('animationend', function() {
+      console.log('this');
       visual.removeChild(this);
     });
   };
