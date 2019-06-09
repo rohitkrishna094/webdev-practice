@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 :root {
+=======
+body {
+>>>>>>> 18c8708171dcb4bc205024dfd7c1f12ee622fbcc
   /* colors */
   --sideBar_SelectColor: #323445;
   --sideBar_BackgroundColor: #282a3c;
@@ -200,4 +204,8 @@
 
 .sidebar_container {
     width: var(--sidebarMinWidth);
+<<<<<<< HEAD
 } */
+=======
+} */
+>>>>>>> 18c8708171dcb4bc205024dfd7c1f12ee622fbcc
