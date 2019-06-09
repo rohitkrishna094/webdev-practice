@@ -1,17 +1,13 @@
-<<<<<<< HEAD
 :root {
     --arrow-size: 10px;
 }
 
-=======
->>>>>>> 18c8708171dcb4bc205024dfd7c1f12ee622fbcc
 html,
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0px;
     padding: 0px;
     /* height: 100%; */
-<<<<<<< HEAD
     background-color: #F5F5F5;
 }
 
@@ -42,6 +38,4 @@ body {
     border-right: var(--arrow-size) solid transparent;
 
     border-bottom: var(--arrow-size) solid white;
-=======
->>>>>>> 18c8708171dcb4bc205024dfd7c1f12ee622fbcc
 }
