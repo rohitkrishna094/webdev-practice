@@ -1,0 +1,25 @@
+<div class="container mt-4">
+  <form>
+    <h4 class="mb-4">Add a Link</h4>
+    <div class="form-group">
+      <label for="title" class="mr-4">Title: </label>
+      <input name="title" #newtitle>
+    </div>
+
+    <div class="form-group">
+      <label for="link" class="mr-4">Link: </label>
+      <input name="link" #newlink>
+    </div>
+
+    <button (click)="addArticle(newtitle, newlink)">
+
+      Submit Link
+    </button>
+
+  </form>
+</div>
+
+<div class="container">
+  <app-article></app-article>
+
+</div>
