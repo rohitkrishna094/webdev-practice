@@ -244,3 +244,82 @@
   visibility: visible;
   top: 60px;
 }
+
+.header_right #grid_menu {
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 280px;
+  position: absolute;
+  top: 150px;
+  right: 58px;
+  box-shadow: 0px 0px 15px 1px rgba(69, 65, 78, 0.2);
+  border-radius: 12px;
+  transition: all 0.6s cubic-bezier(0.18, 0.89, 0.17, 1.48);
+}
+
+.header_right #grid_menu #grid_menu_header {
+  font-size: 20px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.header_right #grid_menu #grid_menu_card ul {
+  border-top: 1px solid #DDD;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  background-color: #F8F8F8;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header_right #grid_menu #grid_menu_card ul li {
+  cursor: pointer;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 50%;
+  border: 1px solid #EEE;
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+.header_right #grid_menu #grid_menu_card ul li i {
+  font-size: 34px;
+}
+
+.header_right #grid_menu #grid_menu_card ul li:hover {
+  background-color: #EEEEEE;
+}
+
+.header_right #grid_menu .grid_text {
+  color: #3F51B5;
+  margin-right: 0;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+#grid_menu #grid_menu_arrow_top {
+  position: relative;
+  left: 230px;
+  top: -10px;
+}
+
+.header_right #grid {
+  cursor: pointer;
+}
+
+.header_right #grid:hover~#grid_menu,
+.header_right #grid_menu:hover {
+  visibility: visible;
+  top: 60px;
+}

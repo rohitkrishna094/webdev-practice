@@ -48,20 +48,46 @@ Vue.component('navbar', {
         <span class="notification">20</span>
         <div id="bell_menu">
             <div id="bell_menu_arrow_top" class="arrow-up"></div>
-                <div id="bell_menu_header">
-                    <p>Notification</p>
-                </div>
-                <div id="bell_menu_card">
-                    <ul>
-                        <li>Wallet Address</li>
-                        <li>Coin Transferred from BTC <span class="text-warning">Unpaid</span></li>
-                        <li>BTC bought</li>
-                        <li>Server Restarted <span class="text-success">Resolved</span></li>
-                        <li>New order received</li>
-                    </ul>
+            <div id="bell_menu_header">
+                <p>Notification</p>
+            </div>
+            <div id="bell_menu_card">
+                <ul>
+                    <li>Wallet Address</li>
+                    <li>Coin Transferred from BTC <span class="text-warning">Unpaid</span></li>
+                    <li>BTC bought</li>
+                    <li>Server Restarted <span class="text-success">Resolved</span></li>
+                    <li>New order received</li>
+                </ul>
             </div>
         </div>
-        <span><i class="fas fa-th-large"></i></span>
+        <span id="grid"><i class="fas fa-th-large"></i></span>
+        <div id="grid_menu">
+            <div id="grid_menu_arrow_top" class="arrow-up"></div>
+            <div id="grid_menu_header">
+                <p>Quick Links</p>
+            </div>
+            <div id="grid_menu_card">
+                <ul>
+                    <li>
+                        <i class="far fa-smile"></i>
+                        <span class="grid_text">New Contact</span>
+                    </li>
+                    <li>
+                        <i class="far fa-copy"></i>
+                        <span class="grid_text">New Invoice</span>
+                    </li>
+                    <li>
+                        <i class="far fa-plus-square"></i>
+                        <span class="grid_text">New Quote</span>
+                    </li>
+                    <li>
+                        <i class="far fa-money-bill-alt"></i>
+                        <span class="grid_text">New Expense</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <span id="last"><i class="fas fa-cog"></i></span>
     </div>
 </section>
