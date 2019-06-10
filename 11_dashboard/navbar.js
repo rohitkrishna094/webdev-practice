@@ -9,27 +9,58 @@ Vue.component('navbar', {
             <span id="user_name">John Doe</span>
         </span>
         <span id="header_profile">
-            <img src="http://pepdev.com/template/apez/admin/uploads/author-4.jpg" alt=""/>
+            <img src="http://pepdev.com/template/apez/admin/uploads/author-4.jpg"/>
+            <div id="profile_menu">
+                    <div id="profile_menu_arrow_top" class="arrow-up"></div>
+                    <div id="profile_menu_header">
+                        <img src="http://pepdev.com/template/apez/admin/uploads/author-1.jpg"/>
+                        <span id="profile_name">John Doe</span>
+                        <span id="profile_caption">Demonstration</span>
+                    </div>
+                    <div id="profile_menu_card">
+                        <ul>
+                            <li>
+                                <i class="far fa-calendar-alt"></i>
+                                <span class="profile_text">My Events</span>
+                            </li>
+                            <li>
+                                <i class="far fa-address-book"></i>
+                                <span class="profile_text">My Notes</span>
+                            </li>
+                            <li>
+                                <i class="far fa-user"></i>
+                                <span class="profile_text">My Profile</span>
+                            </li>
+                            <li>
+                                <i class="fab fa-pinterest-p"></i>
+                                <span class="profile_text">Client Portal</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="profile_menu_bottom">
+                        <button class="primary">Logout</button>
+                    </div>
+            </div>
         </span>
         <span class="bell">
             <i class="fas fa-bell"></i>
-            </span>
-            <span class="notification">20</span>
-            <div id="bell_menu">
-            <div id="bell_arrow_top" class="arrow-up"></div>
+        </span>
+        <span class="notification">20</span>
+        <div id="bell_menu">
+            <div id="bell_menu_arrow_top" class="arrow-up"></div>
                 <div id="bell_menu_header">
                     <p>Notification</p>
                 </div>
                 <div id="bell_menu_card">
                     <ul>
-                    <li>Wallet Address</li>
-                    <li>Coin Transferred from BTC <span class="text-warning">Unpaid</span></li>
-                    <li>BTC bought</li>
-                    <li>Server Restarted <span class="text-success">Resolved</span></li>
-                    <li>New order received</li>
+                        <li>Wallet Address</li>
+                        <li>Coin Transferred from BTC <span class="text-warning">Unpaid</span></li>
+                        <li>BTC bought</li>
+                        <li>Server Restarted <span class="text-success">Resolved</span></li>
+                        <li>New order received</li>
                     </ul>
-                </div>
             </div>
+        </div>
         <span><i class="fas fa-th-large"></i></span>
         <span id="last"><i class="fas fa-cog"></i></span>
     </div>
