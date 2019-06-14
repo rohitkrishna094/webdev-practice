@@ -1,6 +1,8 @@
 :root {
     /* colors */
     --headerBgColor: #ffffff;
+    --primaryBackgroundColor: #ffffff;
+    --secondaryBackgroundColor: #f8f8f8;
     /* animation speeds */
 
     /* widths, height */
@@ -112,7 +114,7 @@
 }
 
 .header_right #bell_menu {
-    background-color: #ffffff;
+    background-color: var(--primaryBackgroundColor);
     visibility: hidden;
     display: flex;
     flex-direction: column;
@@ -126,7 +128,7 @@
 }
 
 .header_right #bell_menu #bell_menu_header {
-    background-color: #ffffff;
+    background-color: var(--primaryBackgroundColor);
     text-align: center;
     font-size: 22px;
     border-top-left-radius: 12px;
@@ -134,7 +136,7 @@
 }
 
 .header_right #bell_menu #bell_menu_card {
-    background-color: #f8f8f8;
+    background-color: var(--secondaryBackgroundColor);
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
 }
@@ -155,7 +157,7 @@
 }
 
 .header_right #bell_menu #bell_menu_card ul li {
-    background-color: #fff;
+    background-color: var(--primaryBackgroundColor);
     box-shadow: 0 0 10px 0 rgba(58, 58, 58, 0.1);
     padding: 10px 20px;
     margin: 5px 0;
@@ -167,7 +169,7 @@
     visibility: hidden;
     display: flex;
     flex-direction: column;
-    background-color: #fff;
+    background-color: var(--secondaryBackgroundColor);
     width: 280px;
     position: absolute;
     top: 150px;
@@ -204,7 +206,7 @@
     display: flex;
     flex-direction: column;
     list-style-type: none;
-    background-color: #F8F8F8;
+    background-color: var(--secondaryBackgroundColor);
     height: 100%;
     width: 100%;
     margin: 0;
@@ -249,7 +251,7 @@
     visibility: hidden;
     display: flex;
     flex-direction: column;
-    background-color: #fff;
+    background-color: var(--primaryBackgroundColor);
     width: 280px;
     position: absolute;
     top: 150px;
@@ -273,7 +275,7 @@
     justify-content: center;
     flex-wrap: wrap;
     list-style-type: none;
-    background-color: #F8F8F8;
+    background-color: var(--secondaryBackgroundColor);
     height: 100%;
     width: 100%;
     margin: 0;
