@@ -8,10 +8,11 @@
     justify-content: space-between;
 }
 
-.dashboard_income_list {
+.dashboard .dashboard_income_list {
     display: flex;
+    margin-top: 24px;
 }
 
-.dashboard_income_list {
-    margin-top: 24px;
+.dashboard .bottom {
+    display: flex;
 }

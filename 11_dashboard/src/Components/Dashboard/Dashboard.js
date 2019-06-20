@@ -3,6 +3,7 @@ import MetricCard from './MetricCard';
 import IncomeCard from './IncomeCard';
 import InvoiceCard from './InvoiceCard';
 import './Dashboard.css';
+import SalesCard from './SalesCard';
 
 function Dashboard() {
   return (
@@ -18,6 +19,9 @@ function Dashboard() {
         <div className="dashboard_income_list">
           <IncomeCard />
           <InvoiceCard />
+        </div>
+        <div className="bottom">
+          <SalesCard />
         </div>
       </div>
     </div>

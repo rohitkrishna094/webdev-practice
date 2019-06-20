@@ -1,0 +1,58 @@
+.SalesCard {
+    background-color: #fff;
+    box-shadow: 10px 8px 44px -15px rgba(0, 0, 0, 0.33);
+    margin-top: 24px;
+    width: 100%;
+    border-radius: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 20px;
+}
+
+.SalesCard .row-wrap {
+    width: 100%;
+    display: flex;
+    flex-basis: 33.33%;
+    box-sizing: border-box;
+    border-right: 1px solid #EEE;
+    padding: 0px 10px;
+}
+
+.SalesCard .row-wrap:nth-child(3),
+.SalesCard .row-wrap:nth-child(6) {
+    border-right: none;
+}
+
+.SalesCard .row {
+    width: 90%;
+    display: flex;
+    border-bottom: 1px dashed #EEE;
+    padding: 20px 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.SalesCard .row-wrap:nth-child(4) .row,
+.SalesCard .row-wrap:nth-child(5) .row,
+.SalesCard .row-wrap:nth-child(6) .row {
+    border-bottom: none;
+}
+
+.SalesCard .right {
+    font-size: 22px;
+}
+
+.SalesCard .row .left {
+    display: flex;
+    flex-direction: column;
+}
+
+.SalesCard .row .left .title {
+    font-size: 16px;
+}
+
+.SalesCard .caption {
+    font-size: 14px;
+    color: #999;
+}
