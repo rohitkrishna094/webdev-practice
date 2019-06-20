@@ -1,0 +1,35 @@
+.metriccard {
+    height: 160px;
+    width: 23%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    box-shadow: 10px 8px 44px -15px rgba(0, 0, 0, 0.33);
+    /* background: linear-gradient(to left, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0.25)); */
+}
+
+.metriccard_text {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.metriccard_metric {
+    font-size: 40px;
+    margin-left: 40px;
+    font-weight: bold;
+}
+
+.metriccard_title {
+    font-size: 20px;
+    margin-left: 40px;
+}
+
+.metriccard i {
+    width: 30%;
+    font-size: 72px;
+    opacity: 0.5;
+}

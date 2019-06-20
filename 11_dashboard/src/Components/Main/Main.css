@@ -1,0 +1,9 @@
+:root {
+    --sidebarWidth: 250px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    margin-left: var(--sidebarWidth);
+}

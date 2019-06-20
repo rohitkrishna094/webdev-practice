@@ -26,7 +26,7 @@
 }
 
 .header_search input[type='text'] {
-    margin-left: 20px;
+    margin-left: 25px;
     padding: 10px;
     padding-left: 25px;
     border-top-left-radius: 40px;
@@ -85,6 +85,7 @@
     font-size: 22px;
     color: #333;
     cursor: pointer;
+    margin-left: 10px;
 }
 
 .header_right .notification {

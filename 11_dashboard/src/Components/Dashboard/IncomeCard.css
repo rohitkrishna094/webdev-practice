@@ -1,0 +1,8 @@
+.incomecard {
+    background-color: #fff;
+    width: 65%;
+    height: 420px;
+    padding: 0px 20px;
+    box-shadow: 10px 8px 44px -15px rgba(0, 0, 0, 0.33);
+    border-radius: 6px;
+}

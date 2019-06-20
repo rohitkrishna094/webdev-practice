@@ -1,0 +1,17 @@
+.dashboard_container {
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.dashboard_metric_cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dashboard_income_list {
+    display: flex;
+}
+
+.dashboard_income_list {
+    margin-top: 24px;
+}
