@@ -25,7 +25,7 @@ const data = {
 const options = {
   legend: {
     labels: {
-      boxWidth: 6,
+      boxWidth: 7,
       usePointStyle: true
     }
   },
