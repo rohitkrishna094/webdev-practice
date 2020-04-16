@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/webdev-practice/11_dashboard/static/css/main.305817c9.chunk.css",
-    "main.js": "/webdev-practice/11_dashboard/static/js/main.8559c056.chunk.js",
-    "main.js.map": "/webdev-practice/11_dashboard/static/js/main.8559c056.chunk.js.map",
-    "runtime~main.js": "/webdev-practice/11_dashboard/static/js/runtime~main.4bef10e3.js",
-    "runtime~main.js.map": "/webdev-practice/11_dashboard/static/js/runtime~main.4bef10e3.js.map",
-    "static/js/2.4f0628a2.chunk.js": "/webdev-practice/11_dashboard/static/js/2.4f0628a2.chunk.js",
-    "static/js/2.4f0628a2.chunk.js.map": "/webdev-practice/11_dashboard/static/js/2.4f0628a2.chunk.js.map",
-    "index.html": "/webdev-practice/11_dashboard/index.html",
-    "precache-manifest.2dc9e0e50121608031ea6a06c5f74965.js": "/webdev-practice/11_dashboard/precache-manifest.2dc9e0e50121608031ea6a06c5f74965.js",
-    "service-worker.js": "/webdev-practice/11_dashboard/service-worker.js",
-    "static/css/main.305817c9.chunk.css.map": "/webdev-practice/11_dashboard/static/css/main.305817c9.chunk.css.map",
-    "static/media/logo.jpg": "/webdev-practice/11_dashboard/static/media/logo.c1b1e2d6.jpg"
+    "main.css": "/webdev-practice/11_dashboard/build/static/css/main.305817c9.chunk.css",
+    "main.js": "/webdev-practice/11_dashboard/build/static/js/main.e391d1fe.chunk.js",
+    "main.js.map": "/webdev-practice/11_dashboard/build/static/js/main.e391d1fe.chunk.js.map",
+    "runtime~main.js": "/webdev-practice/11_dashboard/build/static/js/runtime~main.058129c2.js",
+    "runtime~main.js.map": "/webdev-practice/11_dashboard/build/static/js/runtime~main.058129c2.js.map",
+    "static/js/2.4f0628a2.chunk.js": "/webdev-practice/11_dashboard/build/static/js/2.4f0628a2.chunk.js",
+    "static/js/2.4f0628a2.chunk.js.map": "/webdev-practice/11_dashboard/build/static/js/2.4f0628a2.chunk.js.map",
+    "index.html": "/webdev-practice/11_dashboard/build/index.html",
+    "precache-manifest.a753099638843d11d1c2fe13c9e09efc.js": "/webdev-practice/11_dashboard/build/precache-manifest.a753099638843d11d1c2fe13c9e09efc.js",
+    "service-worker.js": "/webdev-practice/11_dashboard/build/service-worker.js",
+    "static/css/main.305817c9.chunk.css.map": "/webdev-practice/11_dashboard/build/static/css/main.305817c9.chunk.css.map",
+    "static/media/logo.jpg": "/webdev-practice/11_dashboard/build/static/media/logo.c1b1e2d6.jpg"
   }
 }
