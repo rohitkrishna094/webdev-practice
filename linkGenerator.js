@@ -14,7 +14,7 @@ let heading = "webdev-practice";
 let customSubUrls = {
   "faq-app": "dist",
   "11_dashboard": "build",
-  "14_react-conway-game-of-life"
+  "14_react-conway-game-of-life": "build",
 };
 
 let readmeFile = __dirname + "/README.md";
