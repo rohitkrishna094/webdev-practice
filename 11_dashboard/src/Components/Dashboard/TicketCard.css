@@ -1,0 +1,6 @@
+.TicketCard {
+    background-color: pink;
+    flex: 1;
+    margin-top: 24px;
+    box-sizing: border-box;
+}
