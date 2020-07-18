@@ -3,8 +3,10 @@
 Click the links below for their demonstration
 
 * [10_clock](https://rohitkrishna094.github.io/webdev-practice/10_clock/)
-* [11_dashboard](https://rohitkrishna094.github.io/webdev-practice/11_dashboard/)
+* [11_dashboard](https://rohitkrishna094.github.io/webdev-practice/11_dashboard/build)
 * [12_drums](https://rohitkrishna094.github.io/webdev-practice/12_drums/)
+* [13_tonejstest](https://rohitkrishna094.github.io/webdev-practice/13_tonejstest/)
+* [14_react-conway-game-of-life](https://rohitkrishna094.github.io/webdev-practice/14_react-conway-game-of-life/build)
 * [1_Weight-Converter](https://rohitkrishna094.github.io/webdev-practice/1_Weight-Converter/)
 * [2_Temperature-Converter](https://rohitkrishna094.github.io/webdev-practice/2_Temperature-Converter/)
 * [3_Shooter-Game](https://rohitkrishna094.github.io/webdev-practice/3_Shooter-Game/)
@@ -14,5 +16,6 @@ Click the links below for their demonstration
 * [7_TicTacToe](https://rohitkrishna094.github.io/webdev-practice/7_TicTacToe/)
 * [8_cubeRunner](https://rohitkrishna094.github.io/webdev-practice/8_cubeRunner/)
 * [9_vanilla](https://rohitkrishna094.github.io/webdev-practice/9_vanilla/)
-* [faq-app](https://rohitkrishna094.github.io/webdev-practice/faq-app/)
+* [AngularRedditClone](https://rohitkrishna094.github.io/webdev-practice/AngularRedditClone/)
 * [TestProject](https://rohitkrishna094.github.io/webdev-practice/TestProject/)
+* [faq-app](https://rohitkrishna094.github.io/webdev-practice/faq-app/dist)

@@ -4,6 +4,8 @@ import IncomeCard from './IncomeCard';
 import InvoiceCard from './InvoiceCard';
 import './Dashboard.css';
 import SalesCard from './SalesCard';
+import ActivityCard from './ActivityCard';
+import TicketCard from './TicketCard';
 
 function Dashboard() {
   return (
@@ -20,8 +22,10 @@ function Dashboard() {
           <IncomeCard />
           <InvoiceCard />
         </div>
+        <SalesCard />
         <div className="bottom">
-          <SalesCard />
+          {/* <ActivityCard /> */}
+          {/* <TicketCard /> */}
         </div>
       </div>
     </div>

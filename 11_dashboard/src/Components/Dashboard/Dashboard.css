@@ -1,6 +1,8 @@
 .dashboard_container {
     margin-left: 32px;
     margin-right: 32px;
+    display: flex;
+    flex-direction: column;
 }
 
 .dashboard_metric_cards {
@@ -15,4 +17,8 @@
 
 .dashboard .bottom {
     display: flex;
+    width: 100%;
+    background-color: red;
+    box-sizing: border-box;
+    height: 100px;
 }

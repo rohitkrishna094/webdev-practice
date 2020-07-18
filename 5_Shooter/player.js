@@ -11,7 +11,7 @@ class Player {
   }
 
   draw() {
-    ctx.fillStyle = '#573fde';
+    ctx.fillStyle = "#573fde";
     ctx.fillRect(this.x, this.y, this.width, this.height);
   }
 
@@ -54,10 +54,9 @@ class Player {
 
   updateBullets() {
     for (let i = 0; i < this.bullets.length; i++) {
-      let bullet = this.bullets[i];
-      bullet.update();
-      bullet.draw();
-      if (bullet.y < 0) {
+      this.bullets[i].update();
+      this.bullets[i].draw();
+      if (this.bullets[i].y < 0) {
         this.bullets.splice(i, 1);
       }
     }

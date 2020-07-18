@@ -2,26 +2,27 @@
 let width = 600;
 let height = 600;
 
-let c = document.getElementById('myCanvas');
+let c = document.getElementById("myCanvas");
 c.width = width;
 c.height = height;
 
-let ctx = c.getContext('2d');
+let ctx = c.getContext("2d");
 
 game = () => {
   draw();
 };
+
 handle = setInterval(game, 1000 / 60);
 
-window.addEventListener('keydown', e => (keys[e.keyCode] = true), false);
-window.addEventListener('keyup', e => delete keys[e.keyCode], false);
+window.addEventListener("keydown", (e) => (keys[e.keyCode] = true), false);
+window.addEventListener("keyup", (e) => delete keys[e.keyCode], false);
 
 let keys = [];
 let p = new Player(width / 2, height - 20);
 let noOfEnemies = 10;
 let enemies = [];
 
-spawn = n => {
+spawn = (n) => {
   for (let i = 0; i < n; i++) {
     let rx = 20 + Math.random() * (width - 20);
     let ry = (Math.random() * width) / 4;
@@ -37,7 +38,7 @@ draw = () => {
   }
 
   // background color
-  ctx.fillStyle = 'rgb(51,51,51)';
+  ctx.fillStyle = "rgb(51,51,51)";
   ctx.fillRect(0, 0, width, height);
 
   p.update(keys);
@@ -52,17 +53,16 @@ draw = () => {
     }
   }
 
-  let bullets = p.bullets;
   for (let i = 0; i < enemies.length; i++) {
     let e = enemies[i];
-    if (collEnemyBullet(e, bullets)) {
+    if (collEnemyBullet(e, p.bullets)) {
       spawnOrDie(e, enemies, i);
     }
   }
 
   if (keys[81] || collPlayerEnemy(enemies, p)) {
-    ctx.font = '30px Arial';
-    ctx.fillText('Game Over!!! Refresh the page', 0, height / 2);
+    ctx.font = "30px Arial";
+    ctx.fillText("Game Over!!! Refresh the page", 0, height / 2);
     clearInterval(handle);
   }
 };
@@ -84,30 +84,23 @@ spawnOrDie = (e, enemies, i) => {
 };
 
 collEnemyBullet = (e, bullets) => {
-  let res = false;
   for (let i = 0; i < bullets.length; i++) {
-    let tempRes = collided(e, bullets[i]);
-    if (tempRes) {
-      res = true;
-      break;
+    if (collided(e, bullets[i])) {
+      return true;
     }
   }
-  return res;
+  return false;
 };
 
 collPlayerEnemy = (enemies, player) => {
-  let res = false;
   for (let i = 0; i < enemies.length; i++) {
-    let tempRes = collided(player, enemies[i]);
-    if (tempRes) {
-      res = true;
-      break;
+    if (collided(player, enemies[i])) {
+      return true;
     }
   }
-  return res;
+  return false;
 };
 
 collided = (a, b) => {
-  let res = b.x + b.width > a.x && b.y + b.height > a.y && a.x + a.width > b.x && a.y + a.height > b.y;
-  return res;
+  return b.x + b.width > a.x && b.y + b.height > a.y && a.x + a.width > b.x && a.y + a.height > b.y;
 };
