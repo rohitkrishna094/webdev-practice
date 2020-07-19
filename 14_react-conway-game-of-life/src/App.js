@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useRef } from "react";
+import React, { useState, useCallback, useRef, useEffect } from "react";
 import produce from "immer";
 import { useMediaQuery } from "react-responsive";
 import "./App.scss";
@@ -23,7 +23,7 @@ const App = () => {
 
   const isTablet = useMediaQuery({ query: "(max-width: 1224px)" });
   const isMobile = useMediaQuery({ query: "(max-device-width: 425px)" });
-  console.log(numRows, numCols);
+
   if (isMobile) {
     numRows = 15;
     numCols = 15;
@@ -33,10 +33,14 @@ const App = () => {
   }
 
   const [grid, setGrid] = useState(() => generateEmptyGrid(numRows, numCols));
+  const [delay, setDelay] = useState(0);
   const [running, setRunning] = useState(false);
 
   const runningRef = useRef(running);
   runningRef.current = running;
+
+  const delayRef = useRef(delay);
+  delayRef.current = delay;
 
   const runSimulation = useCallback(() => {
     if (!runningRef.current) return;
@@ -59,8 +63,8 @@ const App = () => {
       })
     );
 
-    setTimeout(runSimulation, 0);
-  }, []);
+    setTimeout(runSimulation, delayRef.current);
+  }, [numRows, numCols]);
 
   const onPlayToggle = () => {
     setRunning(!running);
@@ -69,6 +73,10 @@ const App = () => {
       runSimulation();
     }
   };
+
+  useEffect(() => {
+    setGrid(generateRandomGrid(numRows, numCols));
+  }, [numRows, numCols]);
 
   return (
     <div className="app">
@@ -88,6 +96,10 @@ const App = () => {
         <button className="button is-primary is-link" onClick={() => setGrid(generateEmptyGrid(numRows, numCols))}>
           Clear
         </button>
+        <div className="slider">
+          <span className="slider_label">Delay: {delay}</span>
+          <input className="slider slider_input" step="1" min="0" max="500" value={delay} type="range" onChange={(e) => setDelay(Number(e.target.value))} />
+        </div>
       </div>
       <div className="grid-container" style={{ gridTemplateColumns: `repeat(${numCols}, 20px)` }}>
         {grid.map((row, i) =>
