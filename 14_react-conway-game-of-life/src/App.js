@@ -79,13 +79,13 @@ const App = () => {
         </a>
       </h3>
       <div className="button-group">
-        <button className="button is-primary" onClick={onPlayToggle}>
+        <button className="button is-primary is-link" onClick={onPlayToggle}>
           {running ? "Pause" : "Play"}
         </button>
-        <button className="button is-primary" onClick={() => setGrid(generateRandomGrid(numRows, numCols))}>
+        <button className="button is-primary is-link" onClick={() => setGrid(generateRandomGrid(numRows, numCols))}>
           Random
         </button>
-        <button className="button is-primary" onClick={() => setGrid(generateEmptyGrid(numRows, numCols))}>
+        <button className="button is-primary is-link" onClick={() => setGrid(generateEmptyGrid(numRows, numCols))}>
           Clear
         </button>
       </div>
@@ -95,7 +95,7 @@ const App = () => {
             <div
               key={`${i}-${k}`}
               className="grid-item"
-              style={{ backgroundColor: grid[i][k] ? "dodgerblue" : undefined }}
+              style={{ backgroundColor: grid[i][k] ? "#3273DC" : undefined }}
               onClick={() =>
                 setGrid(
                   produce(grid, (gridCopy) => {
