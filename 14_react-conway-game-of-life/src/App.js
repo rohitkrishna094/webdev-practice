@@ -1,9 +1,7 @@
 import React, { useState, useCallback, useRef } from "react";
 import produce from "immer";
+import { useMediaQuery } from "react-responsive";
 import "./App.scss";
-
-const numRows = 30;
-const numCols = 30;
 
 const operations = [
   [0, 1],
@@ -16,11 +14,25 @@ const operations = [
   [-1, 0],
 ];
 
-const generateEmptyGrid = () => Array(numRows).fill(Array(numCols).fill(0));
-const generateRandomGrid = () => Array.from({ length: numRows }, () => Array.from({ length: numCols }, () => (Math.random() > 0.7 ? 1 : 0)));
+const generateEmptyGrid = (numRows, numCols) => Array(numRows).fill(Array(numCols).fill(0));
+const generateRandomGrid = (numRows, numCols) => Array.from({ length: numRows }, () => Array.from({ length: numCols }, () => (Math.random() > 0.7 ? 1 : 0)));
 
 const App = () => {
-  const [grid, setGrid] = useState(() => generateEmptyGrid());
+  let numRows = 35;
+  let numCols = 70;
+
+  const isTablet = useMediaQuery({ query: "(max-width: 1224px)" });
+  const isMobile = useMediaQuery({ query: "(max-device-width: 425px)" });
+  console.log(numRows, numCols);
+  if (isMobile) {
+    numRows = 15;
+    numCols = 15;
+  } else if (isTablet) {
+    numRows = 35;
+    numCols = 35;
+  }
+
+  const [grid, setGrid] = useState(() => generateEmptyGrid(numRows, numCols));
   const [running, setRunning] = useState(false);
 
   const runningRef = useRef(running);
@@ -47,7 +59,7 @@ const App = () => {
       })
     );
 
-    setTimeout(runSimulation, 10);
+    setTimeout(runSimulation, 0);
   }, []);
 
   const onPlayToggle = () => {
@@ -59,10 +71,24 @@ const App = () => {
   };
 
   return (
-    <>
-      <button onClick={onPlayToggle}>{running ? "Pause" : "Play"}</button>
-      <button onClick={() => setGrid(generateRandomGrid())}>Random</button>
-      <button onClick={() => setGrid(generateEmptyGrid())}>Clear</button>
+    <div className="app">
+      <h3 className="title">
+        Conway's Game of Life&nbsp;&nbsp;
+        <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" target="_blank" rel="noopener noreferrer">
+          <i className="far fa-question-circle" />
+        </a>
+      </h3>
+      <div className="button-group">
+        <button className="button is-primary" onClick={onPlayToggle}>
+          {running ? "Pause" : "Play"}
+        </button>
+        <button className="button is-primary" onClick={() => setGrid(generateRandomGrid(numRows, numCols))}>
+          Random
+        </button>
+        <button className="button is-primary" onClick={() => setGrid(generateEmptyGrid(numRows, numCols))}>
+          Clear
+        </button>
+      </div>
       <div className="grid-container" style={{ gridTemplateColumns: `repeat(${numCols}, 20px)` }}>
         {grid.map((row, i) =>
           row.map((_, k) => (
@@ -81,7 +107,7 @@ const App = () => {
           ))
         )}
       </div>
-    </>
+    </div>
   );
 };
 
